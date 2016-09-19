@@ -33,5 +33,11 @@ namespace Testik
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmFuncTwo about = new frmFuncTwo();
+            about.Show();
+        }
     }
 }
