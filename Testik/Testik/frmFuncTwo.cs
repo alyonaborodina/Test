@@ -10,27 +10,21 @@ using System.Windows.Forms;
 
 namespace Testik
 {
-    public partial class frmFuncOne : Form
+    public partial class frmFuncTwo : Form
     {
-        public frmFuncOne()
+        public frmFuncTwo()
         {
             InitializeComponent();
         }
 
-
-
-        private int DoFunctionOne(int a, int b)
+        private int DoFunctionTwo(int a, int b)
         {
-            return a * b;
+            return a + b;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            textBox3.Text = Convert.ToString(DoFunctionOne(Convert.ToInt32(textBox2.Text), Convert.ToInt32(textBox1.Text)));
+            textBox3.Text = Convert.ToString(DoFunctionTwo(Convert.ToInt32(textBox2.Text), Convert.ToInt32(textBox1.Text)));
         }
-
-
     }
-
-
 }
